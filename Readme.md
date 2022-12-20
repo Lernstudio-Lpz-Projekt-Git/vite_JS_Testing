@@ -26,7 +26,11 @@ Add the following section to your `package.json`:
 {
   "scripts": {
     "testvm":  "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-  }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
 }
 ```
 
